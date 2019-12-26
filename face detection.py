@@ -2,7 +2,7 @@ import cv2
 from pynput.mouse import Button,Controller
 ms = Controller()
 cam=cv2.VideoCapture(0)
-fd=cv2.CascadeClassifier(r'C:\Users\CG-DTE\AppData\Local\Programs\Python\Python36\Lib\site-packages\cv2\data\haarcascade_frontalface_alt.xml')
+fd=cv2.CascadeClassifier(r'C:\Harr\haarcascade_frontalface_alt.xml')
 while True:
     r,i=cam.read()
     j=cv2.cvtColor(i,cv2.COLOR_BGR2GRAY)
